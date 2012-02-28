@@ -49,7 +49,7 @@ class views_nivo_slider_plugin_row_nivo_sliderfields extends views_plugin_row {
       '#type' => 'select',
       '#title' => t('Alt/Title field'),
       '#options' => $fields,
-      '#default_value' => $this->options['title_field'],
+      '#default_value' => $this->options['alt_text_field'],
       '#description' => t('Select the field that will be used as the alt/title field, if one is required. Should be Node:Title.'),
     );
 
@@ -57,7 +57,7 @@ class views_nivo_slider_plugin_row_nivo_sliderfields extends views_plugin_row {
       '#type' => 'select',
       '#title' => t('Alt Text Field'),
       '#options' => $fields,
-      '#default_value' => $this->options['alt_text_field'],
+      '#default_value' => $this->options['title_field'],
       '#description' => t('This field populates the caption.'),
     );
  
