@@ -149,7 +149,7 @@ function template_preprocess_views_nivo_slider_view_nivo_sliderfields(&$vars) {
     }
   }
 
-  $img = theme('imagecache' , $presetname , $image_url, $title, $alt_text, $attributes, TRUE);
+  $img = theme('imagecache' , $presetname , $image_url, $alt_text, $title, $attributes, TRUE);
 
   if ($link) {
     $img = '<a href="'.$link.'" class="views-processed">'.$img.'</a>';
