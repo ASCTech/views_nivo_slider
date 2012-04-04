@@ -50,7 +50,7 @@ class views_nivo_slider_plugin_row_nivo_sliderfields extends views_plugin_row {
       '#title' => t('Alt/Title field'),
       '#options' => $fields,
       '#default_value' => $this->options['alt_text_field'],
-      '#description' => t('Select the field that will be used as the alt/title field, if one is required. Should be Node:Title.'),
+      '#description' => t('Select the field that will be used for alternative text on the image.'),
     );
 
     $form['title_field'] = array(
@@ -58,7 +58,7 @@ class views_nivo_slider_plugin_row_nivo_sliderfields extends views_plugin_row {
       '#title' => t('Alt Text Field'),
       '#options' => $fields,
       '#default_value' => $this->options['title_field'],
-      '#description' => t('This field populates the caption.'),
+      '#description' => t('Select the field that will be used as the caption.'),
     );
  
     $form['link_field'] = array(
